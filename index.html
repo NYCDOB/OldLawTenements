@@ -316,7 +316,7 @@ var width = $("#map").width(),
 			if(d3.select(this).style("fill-opacity") != 0){
 				tooltip.style("visibility", "visible");
 				tooltip.html(
-					'BIN: ' + [d.BIN] + '</br>' +								
+					'BIN: ' + '<a href= "http://dob-bisweb.buildings.nycnet/bisweb-intra/PropertyProfileOverviewServlet?bin=' + d.BIN + '&go4=+GO+&requestid=0" target="_blank">' + d.BIN + '</a>' + '</br>' +								
 					'Address: '+ [d.HouseNum] + ' ' + [d.Street] + ', ' + [d.Boro] + '</br>' +
 					'Community District: ' + [d.CB] + '</br>' +
 					'Block: '+ [d.Block] + '</br>' +
@@ -414,7 +414,7 @@ var width = $("#map").width(),
 		return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
 			'<tr>'+
 				'<td>BIN:</td>'+
-				'<td>'+[d.BIN]+'</td>'+
+				'<td>'+'<a href= "http://dob-bisweb.buildings.nycnet/bisweb-intra/PropertyProfileOverviewServlet?bin=' + d.BIN + '&go4=+GO+&requestid=0" target="_blank">' + d.BIN + '</a>'+'</td>'+
 			'</tr>'+
 			'<tr>'+
 				'<td>Community District:</td>'+
